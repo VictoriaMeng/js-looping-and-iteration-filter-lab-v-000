@@ -6,5 +6,5 @@ function fuzzyMatch(drivers, letters) {
   return drivers.filter(driver => driver.startsWith(letters));
 };
 function matchName(drivers, name) {
-  return drivers.filter(driver => driver.hasOwnProperty('name'));
+  return drivers.filter(driver => driver.hasOwnProperty("${name}"));
 };
