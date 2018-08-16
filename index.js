@@ -5,6 +5,6 @@ function findMatching(drivers, name) {
 function fuzzyMatch(drivers, letters) {
   return drivers.filter(driver => driver.startsWith(letters));
 };
-function matchName() {
-  
+function matchName(drivers, name) {
+  return drivers.filter(driver => driver.hasOwnProperty('name'));
 };
